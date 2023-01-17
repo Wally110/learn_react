@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import App from './App' // './Api'
+import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// In development environment, we've been compiling, hot-reloading and updating on the fly.
+// For production, we're going to have `static files` loading in - none of the source code.
+// We can do this by making a build and deploying it.
+
+// run `npm run build`
+// This will create a `build` folder which will contain the app. Put the contents of that folder anywhere.
+ReactDOM.render(<App />, document.getElementById('root'))
